@@ -1,0 +1,49 @@
+.jobs-container {
+    padding: 30px;
+    background-color: #f0f4f8;
+    border-radius: 12px;
+  }
+  
+  .job-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-tags {
+    margin-top: 15px;
+  }
+  
+  .job-tags span {
+    background-color: #007bff;
+    color: white;
+    margin-right: 10px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  .job-details-container {
+    padding: 40px;
+    background: linear-gradient(135deg, #1e90ff, #f9f9f9);
+    border-radius: 10px;
+    color: #2c3e50;
+  }
+  
+  .job-details-container h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+  }

@@ -1,0 +1,92 @@
+.bookmarks-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+  }
+  
+  .bookmark-card {
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .bookmark-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .bookmark-card h2 {
+    font-size: 24px;
+    color: #1f2937;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .bookmark-card p {
+    font-size: 18px;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  
+  .bookmark-card a {
+    text-decoration: none;
+    color: #1d4ed8;
+    transition: color 0.3s ease;
+  }
+  
+  .bookmark-card a:hover h2 {
+    color: #2563eb;
+  }
+  
+  .bookmark-card a:hover p {
+    color: #3b82f6;
+  }
+  
+  .bookmark-card p strong {
+    color: #374151;
+    font-weight: 700;
+  }
+  
+  button {
+    background-color: #1f2937;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background-color: #111827;
+  }
+  
+  @media (max-width: 768px) {
+    .bookmarks-container {
+        padding: 20px;
+        gap: 15px;
+    }
+  
+    .bookmark-card h2 {
+        font-size: 20px;
+    }
+  
+    .bookmark-card p {
+        font-size: 16px;
+    }
+  
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+  }
